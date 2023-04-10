@@ -1,0 +1,39 @@
+@mixin pill {
+  border: 1px solid;
+  border-radius: 2em;
+  padding: .5em 2em;
+  color: var(--wp--preset--color--orange);
+  text-transform: uppercase;
+  & a {
+    text-decoration: none;
+    color: var(--wp--preset--color--orange);
+  }
+}
+@mixin pill-current {
+  background-color: var(--wp--preset--color--orange);
+  & a {
+    color: var(--wp--preset--color--base);
+  }
+}
+.wp-block-categories-list.wp-block-categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: .5rem;
+
+  & .cat-item  {
+    @include pill;
+  }
+  & .cat-item.current-cat {
+    @include pill-current;
+  }
+}
+.category-all-link {
+  @include pill;
+}
+body:not(.archive.category) {
+  .category-all-link {
+    @include pill-current;
+  }
+}

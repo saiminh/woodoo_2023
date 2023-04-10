@@ -4,7 +4,8 @@
   "description": "WordPress theme for Woodoo",
   "main": "assets/js/index.js",
   "scripts": {
-    "start": "sass --watch assets/scss/index.scss style.css & sass --watch assets/scss/index-editor.scss style-editor.css"
+    "start": "sass --watch assets/scss/index.scss style.css & sass --watch assets/scss/index-editor.scss style-editor.css",
+    "build": "sass --style=compressed assets/scss/index.scss style.css && sass --style=compressed assets/scss/index-editor.scss style-editor.css"
   },
   "author": "",
   "license": "ISC"

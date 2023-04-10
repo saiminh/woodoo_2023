@@ -30,6 +30,7 @@ function woodoo2023_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'woodoo2023_scripts' );
 
+require_once get_template_directory() . '/inc/custom-post-template.php';
 require_once get_template_directory() . '/inc/custom-post-type-partners.php';
 require_once get_template_directory() . '/inc/custom-post-type-careers.php';
 require_once get_template_directory() . '/inc/image-sizes.php';

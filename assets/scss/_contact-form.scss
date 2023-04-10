@@ -1,0 +1,90 @@
+.wpcf7-form {
+  max-width: 840px;
+  margin: auto;
+  background-color: var(--wp--preset--color--offwhite);
+  color: var(--wp--preset--color--contrast);
+  padding: 2em;
+
+  & input::placeholder,
+  & textarea::placeholder {
+    opacity: 1;
+  }
+  & input, & textarea, & select {
+    background-color: var(--wp--preset--color--base);
+    background-color: transparent;
+    border: 1px solid var(--wp--preset--color--contrast);
+    font-family: var(--wp--preset--font-family--everett);
+    font-size: var(--wp--preset--font-size--16);
+    color: var(--wp--preset--color--contrast);
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  textarea[name="candidature"] {
+    border: none;
+    border-top: 1px solid;
+    font-size: var(--wp--preset--font-size--30);
+    font-family: var(--wp--preset--font-family--everett);
+    font-weight: 300;
+    text-transform: uppercase;
+    resize: none;
+    width: 100%;
+    padding: .5em 0 0 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  label {
+    position: relative;
+    display: block;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  input[type="file"] {
+    border: none;
+    padding-left: 0;
+  }
+  .wpcf7-submit {
+    margin-top: 1.5rem;
+    border-radius: 2em;
+    color: var(--wp--preset--color--orange);
+    border-color: var(--wp--preset--color--orange);
+  }
+  .seejob {
+    display: none;
+  }
+  input[name="service"] {
+    display: none;
+  }
+  input[type="checkbox"] {
+   width: auto;
+   margin: .33em .5em 0 0;
+   float: left;
+   & + span {
+    font-weight: 300;
+   }
+  }
+  .wpcf7-list-item {
+    margin: 0;
+  }
+  .wp-block-columns {
+    gap: 1rem;
+  }
+  .wp-block-column p {
+    margin: 0;
+  }
+  .wp-block-column p span {
+    display: block;
+    position: relative;
+  }
+  .wpcf7-not-valid-tip {
+    color: var(--wp--preset--color--orange);
+  }
+}
+.wpcf7 form .wpcf7-response-output {
+  margin: 1em 0 0 0;
+  padding: 1em!important;
+  color: #46b450;
+}

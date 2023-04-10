@@ -6,9 +6,12 @@
 @use './buttons';
 @use './cover-join-us';
 @use './helper-classes';
+@use './categories-list';
+@use './contact-form';
 @use './wp-blocks-overrides/separator';
 @use './wp-blocks-overrides/video';
 @use './wp-blocks-overrides/columns';
+@use './editor-only/custom-post-template';
 
 
 
