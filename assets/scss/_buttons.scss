@@ -1,0 +1,14 @@
+.wp-block-button__link {
+  transition: all .3s ease-out;
+}
+
+.wp-block-button .wp-block-button__link.is-style-outline, 
+.wp-block-button.is-style-outline > .wp-block-button__link {
+  padding: 1.5em 3em;
+  border-width: 1px;
+
+  &:hover {
+    border-color: var(--wp--preset--color--contrast);
+    color: var(--wp--preset--color--orange);
+  }
+}

@@ -1,0 +1,18 @@
+ol {
+  padding-left: 0 !important;
+  counter-reset: default-counter !important;
+  list-style: none !important;
+}
+ol > li {
+  list-style: none;
+  border-top: 1px solid var(--wp--preset--color--orange);
+  padding: .6em 0 .6em 1.5em;
+  position: relative;
+}
+ol > li:before {
+  content: counter(default-counter);
+  counter-increment: default-counter; 
+  position: absolute;
+  left: 0;
+  width: 1.5em;
+}

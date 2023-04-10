@@ -1,0 +1,12 @@
+.cover-join-us .wp-block-cover__inner-container {
+  position: absolute;
+  left: var(--wp--preset--spacing--outer);
+  bottom: var(--wp--preset--spacing--outer);
+  width: 40%;
+  min-width: 24rem;
+  max-width: calc(100% - 2 * var(--wp--preset--spacing--outer))!important;
+  @media (max-width: 781px) {
+    width: calc(100% - 2 * var(--wp--preset--spacing--outer));
+    min-width: auto;  
+  }
+}

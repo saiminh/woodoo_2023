@@ -1,0 +1,4 @@
+.editor-styles-wrapper .is-layout-flow > lt-highlighter + * {
+  margin-block-start: 0;
+}
+

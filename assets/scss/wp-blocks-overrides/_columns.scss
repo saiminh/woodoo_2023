@@ -1,0 +1,4 @@
+.wp-block-post-template.is-flex-container {
+  // fixes a calculation quirk in Firefox that causes the columns wrap
+  gap: 1.249em!important;
+}

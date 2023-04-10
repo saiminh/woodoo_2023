@@ -1,0 +1,32 @@
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+.tnum {
+  font-feature-settings: "tnum";
+  letter-spacing: -0.05em;
+}
+.position-absolute {
+  position: absolute;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.left-0 {
+  left: 0;
+}
+.lazzer-top-alignment {
+  transform: translateY(-16%);
+}
+@media (max-width: 781px) {
+  .stack-on-mobile {
+    flex-direction: column;
+  }
+  .ignore-padding-left-mobile {
+    padding-left: 0!important;
+  }
+  .two-cols-mobile {
+    & > .wp-block-column {
+      flex: 0 0 calc(50% - .667rem)!important;
+    }
+  }
+}

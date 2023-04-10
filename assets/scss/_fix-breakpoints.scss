@@ -1,0 +1,24 @@
+// /* copy of wp default css to a 768px media query */
+@media (min-width: 782px) {
+  .wp-block-navigation__responsive-container-open:not(.always-shown) {
+      display: none !important;
+  }
+
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+      display: block !important;
+      width: 100%;
+      position: relative;
+      z-index: auto;
+      background-color: inherit;
+  }
+}
+
+/* neutralize the wp default for 600px */
+@media (min-width: 600px) {
+  .wp-block-navigation__responsive-container-open:not(.always-shown) {
+      display: flex;
+  }
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+      display: none;
+  }
+}

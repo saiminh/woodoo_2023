@@ -1,0 +1,9 @@
+.wp-site-blocks > * + * {
+  margin-top: 0;
+}
+
+@media (max-width: 781px) {
+  .wp-site-blocks main > .entry-content > :first-child {
+    padding-top: 40px!important;
+  }
+}
