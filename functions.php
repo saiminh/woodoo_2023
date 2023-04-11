@@ -17,7 +17,9 @@ function woodoo2023_scripts() {
     array(), 
     wp_get_theme()->get( 'Version' ) 
   );
-  wp_enqueue_script( 'header', get_template_directory_uri().'/assets/js/index.js', array(), false, true );
+  // No site-wide JS at the moment
+  // wp_enqueue_script( 'header', get_template_directory_uri().'/assets/js/index.js', array(), false, true );
+
   // Enqueue JS only for certain pages
   // ––––––––––––––––––––––––––––––––
   // global $post;
