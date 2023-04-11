@@ -43,14 +43,31 @@
     font-weight: 500;
   }
   input[type="file"] {
-    border: none;
-    padding-left: 0;
+    display: none;
   }
-  .wpcf7-submit {
+  .wpcf7-submit, .upload label {
     margin-top: 1.5rem;
     border-radius: 2em;
+    border-width: 1px;
+    border-style: solid;
+    padding: 1em;
+    font-size: var(--wp--preset--font-size--16);
+    font-weight: 300;
+    text-align: center;
     color: var(--wp--preset--color--orange);
     border-color: var(--wp--preset--color--orange);
+  }
+  .upload label {
+    color: var(--wp--preset--color--contrast);
+    border-color: var(--wp--preset--color--contrast);
+    cursor: pointer;
+    &:hover {
+      color: var(--wp--preset--color--orange);
+      border-color: var(--wp--preset--color--orange);
+    }
+  }
+  .consent {
+    margin: 1em 0 0 0;
   }
   .seejob {
     display: none;
@@ -62,6 +79,7 @@
    width: auto;
    margin: .33em .5em 0 0;
    float: left;
+   
    & + span {
     font-weight: 300;
    }
@@ -87,4 +105,11 @@
   margin: 1em 0 0 0;
   padding: 1em!important;
   color: #46b450;
+}
+.wpcf7-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
 }

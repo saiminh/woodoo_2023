@@ -1,0 +1,11 @@
+.has-contrast-background-color {
+  & a, & a:where(:not(.wp-element-button)) {
+    color: var(--wp--preset--color--base);
+    text-decoration: none;
+    font-weight: 300;
+
+    &:hover {
+      color: var(--wp--preset--color--orange);
+    }
+  }
+}
