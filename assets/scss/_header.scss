@@ -2,7 +2,7 @@
   header.wp-block-template-part {
     background-color: var(--wp--preset--color--base);
     padding: 1rem 0;
-    position: fixed;
+    position: sticky;
     top:0;
     left:0;
     right: 0;
@@ -33,7 +33,7 @@
   header.wp-block-template-part {
     padding: var(--wp--preset--spacing--outer) 0;
     background-color: var(--wp--preset--color--base);
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
