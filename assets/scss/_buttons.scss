@@ -37,6 +37,10 @@
     background-color: var(--wp--preset--color--contrast);
     border-color: var(--wp--preset--color--contrast);
   }
+  @media (max-width:782px){
+    width: 100%;
+    display: block;
+  }
 }
 .has-contrast-background-color .is-logo-button.wp-block-button  .wp-block-button__link.is-style-outline,
 .has-contrast-background-color .is-logo-button.wp-block-button.is-style-outline > .wp-block-button__link {
