@@ -31,13 +31,24 @@
     margin-right: .1em;
     transition: all .5s ease-out;
   }
-
+  
   &:hover {
     color: var(--wp--preset--color--base);
     background-color: var(--wp--preset--color--contrast);
     border-color: var(--wp--preset--color--contrast);
   }
-  &:hover:before {
+}
+.has-contrast-background-color .is-logo-button.wp-block-button  .wp-block-button__link.is-style-outline,
+.has-contrast-background-color .is-logo-button.wp-block-button.is-style-outline > .wp-block-button__link {
+  &:before {
     filter: invert(1);
+  }
+  &:hover {
+    color: var(--wp--preset--color--contrast);
+    background-color: var(--wp--preset--color--base);
+    border-color: var(--wp--preset--color--base);
+  }
+  &:hover:before {
+    filter: invert(0);
   }
 }
