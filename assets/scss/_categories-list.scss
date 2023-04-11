@@ -39,20 +39,20 @@ body:not(.archive.category) {
   }
 }
 @media (max-width: 781px) {
+  body .is-layout-flex.query-category-nav {
+    display: block;
+  }
   .wp-block-categories-list.wp-block-categories {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    width: calc(100% + var(--wp--preset--spacing--outer));
-    margin-right: calc(var(--wp--preset--spacing--outer) * -1);
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    display: block;
     
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
     & .cat-item {
-      scroll-snap-align: start;
+      max-width: var(--wp--style--global--wide-size);
+      margin: .2em 0;
+      font-size: var(--wp--preset--font-size--12);
     }
+  }
+  .category-all-link {
+    max-width: var(--wp--style--global--wide-size);
+    font-size: var(--wp--preset--font-size--12);
   }
 }
