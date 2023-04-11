@@ -2,6 +2,12 @@
   transition: all .3s ease-out;
 }
 
+@media (max-width:782px){
+  .wp-block-button__link {
+    width: 100%;
+  }
+}
+
 .wp-block-button .wp-block-button__link.is-style-outline, 
 .wp-block-button.is-style-outline > .wp-block-button__link {
   padding: 1.5em 3em;
