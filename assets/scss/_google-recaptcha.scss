@@ -1,0 +1,6 @@
+.grecaptcha-badge { 
+  visibility: hidden;
+}
+body.page-apply .grecaptcha-badge { 
+  visibility: visible;
+}
