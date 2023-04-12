@@ -73,5 +73,6 @@
 }
 .button-nav-get-in-touch .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-background).currentLink {
   background-color: var(--wp--preset--color--contrast);
+  border-color: var(--wp--preset--color--contrast);
   color: var(--wp--preset--color--base);
 }
