@@ -49,6 +49,9 @@
     background-color: var(--wp--preset--color--contrast);
     border-color: var(--wp--preset--color--contrast);
   }
+  &:hover:before {
+    filter: invert(0);
+  }
   @media (max-width:782px){
     width: 100%;
     display: block;
