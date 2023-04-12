@@ -1,3 +1,11 @@
+<?php
+/**
+ * Title: Default Footer
+ * Slug: twentytwentythree/footer-default
+ * Categories: footer
+ * Block Types: core/template-part/footer
+ */
+?>
 <!-- wp:group {"backgroundColor":"contrast","textColor":"base","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-base-color has-contrast-background-color has-text-color has-background"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:spacer {"height":"2em","className":"hide-on-mobile"} -->
