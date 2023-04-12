@@ -1,3 +1,8 @@
 .wp-site-blocks > * + * {
   margin-top: 0;
 }
+@media (min-width: 600px) and (max-width: 1024px) {
+  .wp-block-post-template.is-flex-container.is-flex-container.columns-4 > li {
+    width: calc(50% - .625em)!important;
+  }
+}
