@@ -25,16 +25,17 @@
   
     
 
-    <!-- wp:query {"query":{"perPage":"20","pages":"1","offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"flex","columns":4},"align":"wide"} -->
-    
-    <div class="wp-block-query alignwide">
-      
-    <!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-    <div class="wp-block-group"><!-- wp:paragraph {"className":"category-all-link"} -->
-      <p class="category-all-link"><a href="http://woodoo2023.local/news/" data-type="page" data-id="5281">all</a></p>
-      <!-- /wp:paragraph -->
+  <!-- wp:query {"queryId":0,"query":{"perPage":"100","pages":"1","offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"flex","columns":4},"align":"wide"} -->
+  <div class="wp-block-query alignwide"><!-- wp:spacer {"height":"1.5rem","className":" hide-on-desktop","hideOnDesktop":true} -->
+    <div style="height:1.5rem" aria-hidden="true" class="wp-block-spacer  hide-on-desktop"></div>
+    <!-- /wp:spacer -->
   
-      <!-- wp:categories /--></div>
+    <!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"className":"query-category-nav","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group query-category-nav"><!-- wp:paragraph {"className":"category-all-link"} -->
+    <p class="category-all-link"><a href="/news/" data-type="page" data-id="5281">All</a></p>
+    <!-- /wp:paragraph -->
+  
+    <!-- wp:categories /--></div>
     <!-- /wp:group -->
   
     <!-- wp:spacer {"height":"1.5rem"} -->
@@ -42,8 +43,9 @@
     <!-- /wp:spacer -->
   
     <!-- wp:post-template -->
-    <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"offwhite","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group has-offwhite-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:post-featured-image {"isLink":true,"sizeSlug":"square-s"} /-->
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"dimensions":{"minHeight":"100%"}},"backgroundColor":"offwhite","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"space-between"}} -->
+    <div class="wp-block-group has-offwhite-background-color has-background" style="min-height:100%;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group"><!-- wp:post-featured-image {"sizeSlug":"square-s"} /-->
   
     <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|s","right":"var:preset|spacing|s","bottom":"var:preset|spacing|s","left":"var:preset|spacing|s"}}},"layout":{"type":"constrained"}} -->
     <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--s);padding-right:var(--wp--preset--spacing--s);padding-bottom:var(--wp--preset--spacing--s);padding-left:var(--wp--preset--spacing--s)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
@@ -58,9 +60,12 @@
     <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
     <!-- /wp:separator -->
   
-    <!-- wp:post-excerpt {"style":{"typography":{"lineHeight":"1.2"}}} /-->
+    <!-- wp:post-excerpt {"style":{"typography":{"lineHeight":"1.2"}},"fontSize":"14"} /--></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group -->
   
-    <!-- wp:create-block/woodoo-post-meta {"className":"wp-block-create-block-woodoo-post-meta"} /--></div>
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|s","right":"var:preset|spacing|s","bottom":"var:preset|spacing|s","left":"var:preset|spacing|s"}}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--s);padding-right:var(--wp--preset--spacing--s);padding-bottom:var(--wp--preset--spacing--s);padding-left:var(--wp--preset--spacing--s)"><!-- wp:create-block/woodoo-post-meta {"className":"wp-block-create-block-woodoo-post-meta"} /--></div>
     <!-- /wp:group --></div>
     <!-- /wp:group -->
     <!-- /wp:post-template -->

@@ -7,4 +7,20 @@ function detectLinkToCurrentURL() {
     }
   });
 }
-document.addEventListener('DOMContentLoaded', detectLinkToCurrentURL);
+
+function jobApplicationDecodeURL(){
+  //check URL for 'service' parameter and decode it from base64
+  var url = new URL(window.location.href);
+  var service = url.searchParams.get("service");
+  if(service){
+    var decodedService = atob(service);
+    // find an input field with name="service" and set its value to the decoded value
+    var serviceInput = document.querySelector('input[name="service"]');
+    serviceInput.setAttribute('value', decodedService);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  detectLinkToCurrentURL();
+  jobApplicationDecodeURL();
+});
