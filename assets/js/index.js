@@ -1,31 +1,11 @@
-function initHeader() {
-  const header = document.querySelector('header.wp-block-template-part');
-  let headerHeight = header.offsetHeight;
-
-  window.addEventListener('resize', () => {
-    headerHeight = header.offsetHeight;
-  })
-
-  function setHeaderClass(){
-    const darkContainers = document.querySelectorAll('.has-contrast-background-color');
-    if (darkContainers) {
-      darkContainers.forEach((darkContainer, index) => {
-        const darkContainerRect = darkContainer.getBoundingClientRect();
-        if (darkContainerRect.top < headerHeight/2 && darkContainerRect.bottom >= headerHeight/2) {
-          header.classList.add('header--inverted--' + index);
-        } else {
-          header.classList.remove('header--inverted--' + index);
-        }
-      })
+function detectLinkToCurrentURL() {
+  const currentURL = window.location.href;
+  const links = document.querySelectorAll('a');
+  links.forEach((link) => {
+    console.log(currentURL, link.href);
+    if (link.href === currentURL) {
+      link.classList.add('currentLink');
     }
-  }
-  setHeaderClass();
-
-  window.addEventListener('scroll', () => {
-    setHeaderClass();
-  })
+  });
 }
-document.addEventListener('DOMContentLoaded', function() {
-  initHeader();
-  console.log('initHeader');
-})
+document.addEventListener('DOMContentLoaded', detectLinkToCurrentURL);
