@@ -76,3 +76,8 @@
   border-color: var(--wp--preset--color--contrast);
   color: var(--wp--preset--color--base);
 }
+@media (max-width: 782px) {
+  .wp-block-buttons.button-nav-get-in-touch > .wp-block-button a {
+    padding: .75em 1em;
+  }
+}
