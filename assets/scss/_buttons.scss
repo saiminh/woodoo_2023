@@ -17,7 +17,13 @@
     color: var(--wp--preset--color--orange);
   }
 }
-  
+.wp-block-button .wp-block-button__link.has-contrast-color.has-base-background-color:hover {
+  background-color: var(--wp--preset--color--orange)!important;
+}
+
+
+
+// buttons that have a technology logo in it (slim flow solid)  
 .is-logo-button.wp-block-button  .wp-block-button__link.is-style-outline,
 .is-logo-button.wp-block-button.is-style-outline > .wp-block-button__link  {
   padding: .5em 8em .5em 1em;

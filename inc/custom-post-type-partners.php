@@ -10,8 +10,8 @@ function create_posttype() {
   // CPT Options
     array(
       'labels' => array(
-        'name' => __( 'Partners' ),
-        'singular_name' => __( 'Partner' ),
+        'name' => __( 'Creative Studio Projects' ),
+        'singular_name' => __( 'Creative Studio Project' ),
       ),
       'public' => true,
       'show_ui' => true,

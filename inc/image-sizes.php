@@ -14,7 +14,6 @@ function woodoo_add_image_sizes() {
   add_image_size( 'portrait-xl', 1680, 1880, true );
   add_image_size( 'slider-gallery-xs', 390, 200, true);
   add_image_size( 'slider-gallery-s', 701, 360, true);
-  add_image_size( 'slider-gallery-s', 701, 360, true);
   add_image_size( 'slider-gallery', 1130, 580, true);
   add_image_size( 'slider-gallery-l', 1948, 1000, true);
   add_image_size( 'slider-gallery-xl', 2337, 1200, true);
@@ -32,20 +31,25 @@ function woodoo_add_image_sizes() {
 }
 add_action('after_setup_theme', 'woodoo_add_image_sizes');
 
-function peak_custom_sizes( $sizes ) {
+function woodoo_custom_sizes( $sizes ) {
   return array_merge( $sizes, array(
     'square' => __( 'Square (33% wide)' ),
     'square-s' => __( 'Square (25% wide)' ),
     'portrait' => __( 'Half Hero' ),
     'slider-gallery' => __( 'Slider Gallery' ),
+    'slider-gallery-s' => __( '50% Landscape rectangle' ),
     ) );
 }
 
-add_filter( 'image_size_names_choose', 'peak_custom_sizes' );
+add_filter( 'image_size_names_choose', 'woodoo_custom_sizes' );
 
 function my_content_image_sizes_attr( $sizes, $size, $image_src, $image_meta, $attachment_id ) {
   $width = $size[0];
   $height = $size[1];
+  
+  if ( str_contains( $image_src, 'image-549-scaled' )) {
+    $sizes = '(min-width: 782px) 100vw, 400vw';
+  }
   //square 33%
   if ( $width == 640 && $height == 640 ) {
     $sizes = '(min-width: 782px) 32vw, 100vw';
@@ -62,28 +66,15 @@ function my_content_image_sizes_attr( $sizes, $size, $image_src, $image_meta, $a
   if ( $width == 1130 && $height == 580 ) {
     $sizes = '(min-width: 782px) 85vw, 78vw';
   }
+  //50% Landscape Rectangle
+  if ( $width == 701 && $height == 360 ) {
+    $sizes = '(min-width: 782px) 95vw, 47vw';
+  }
   if ( get_post_type() == 'partners' ) {
     $sizes = '(min-width: 782px) 22vw, 100vw';
   }
-  // if ( get_post_type() == 'teammember' && is_front_page() ) {
-  //   $sizes = '(min-width: 600px) 14vw, 30vw';
-  // }
-  // if ( get_post_type() == 'teammember' && !is_front_page() ) {
-  //   $sizes = '(min-width: 600px) 24vw, 98vw';
-  // }
-  // if ( get_post_type() == 'founders' && is_front_page() ) {
-  //   $sizes = '(min-width: 600px) 40vw, 94vw';
-  // }
-  // if ( get_post_type() == 'founders' && !is_front_page() ) { //founder photo on founders page
-  //   $sizes = '(min-width: 600px) 32vw, 93vw';
-  // }
-  // if ( get_post_type() == 'post' ) {
-  //   $sizes = '(min-width: 600px) 46vw, 90vw';
-  // }
-  // if ( is_single() ) {
-  //   $sizes = '(min-width: 600px) 40rem, 90vw';
-  // }
-
+  
   return $sizes;
 }
 add_filter( 'wp_calculate_image_sizes', 'my_content_image_sizes_attr', 10, 5 );
+
