@@ -36,4 +36,6 @@ require_once get_template_directory() . '/inc/custom-post-template.php';
 require_once get_template_directory() . '/inc/custom-post-type-partners.php';
 require_once get_template_directory() . '/inc/custom-post-type-careers.php';
 require_once get_template_directory() . '/inc/add-slug-to-body-class.php';
+require_once get_template_directory() . '/inc/remove-comments.php';
 require_once get_template_directory() . '/inc/image-sizes.php';
+require_once get_template_directory() . '/inc/cleanup-frontend-code.php';
