@@ -15,4 +15,6 @@ ol > li:before {
   position: absolute;
   left: 0;
   width: 1.5em;
+  font-feature-settings: "tnum";
+  letter-spacing: -0.05em;
 }
