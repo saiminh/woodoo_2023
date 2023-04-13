@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Post Meta
- * Slug: twentytwentythree/post-meta
+ * Slug: woodoo2023/post-meta
  * Categories: query
  * Keywords: post meta
  * Block Types: core/template-part/post-meta
