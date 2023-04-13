@@ -1,0 +1,6 @@
+.wp-block-search__inside-wrapper,
+:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) {
+  padding: 4px 4px 4px 1em;
+  border-radius: 2em;
+  box-sizing: border-box;
+}

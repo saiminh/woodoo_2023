@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Default Footer
- * Slug: twentytwentythree/footer-default
+ * Slug: woodoo2023/footer-default
  * Categories: footer
  * Block Types: core/template-part/footer
  */
