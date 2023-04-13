@@ -1,9 +1,35 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
-<main class="wp-block-group">
-	<!-- wp:pattern {"slug":"twentytwentythree/hidden-404"} /-->
-</main>
-<!-- /wp:group -->
+<!-- wp:spacer {"height":"10em","className":" hide-on-mobile","hideOnMobile":true} -->
+<div style="height:10em" aria-hidden="true" class="wp-block-spacer  hide-on-mobile"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"25%"} -->
+<div class="wp-block-column" style="flex-basis:25%"></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"tagName":"main","className":" is-half-height-desktop is-half-height-mobile","layout":{"type":"constrained"},"halfHeightMobile":true,"halfHeightDesktop":true} -->
+<main class="wp-block-group is-half-height-desktop is-half-height-mobile"><!-- wp:heading {"textAlign":"center","level":1} -->
+<h1 class="wp-block-heading has-text-align-center">404</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">This page could not be found.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search...","width":100,"widthUnit":"%","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"align":"center"} /--></main>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"25%"} -->
+<div class="wp-block-column" style="flex-basis:25%"></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:spacer {"height":"5em","className":" hide-on-mobile","hideOnMobile":true} -->
+<div style="height:5em" aria-hidden="true" class="wp-block-spacer  hide-on-mobile"></div>
+<!-- /wp:spacer -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
