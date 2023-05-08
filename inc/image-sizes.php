@@ -47,7 +47,7 @@ function my_content_image_sizes_attr( $sizes, $size, $image_src, $image_meta, $a
   $width = $size[0];
   $height = $size[1];
   
-  if ( str_contains( $image_src, 'image-549-scaled' )) {
+  if ( str_contains( $image_src, 'Team.png' )) {
     $sizes = '(min-width: 782px) 100vw, 400vw';
   }
   //square 33%
