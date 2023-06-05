@@ -38,6 +38,7 @@ require_once get_template_directory() . '/inc/add-slug-to-body-class.php';
 require_once get_template_directory() . '/inc/remove-comments.php';
 require_once get_template_directory() . '/inc/image-sizes.php';
 require_once get_template_directory() . '/inc/cleanup-frontend-code.php';
+require_once get_template_directory() . '/inc/polylang-add-legacy-menus.php';
 
 add_action('init', 'wpdocs_custom_init');
 function wpdocs_custom_init() {
