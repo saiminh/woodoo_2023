@@ -131,6 +131,7 @@ body.page-apply {
     bottom: 0;
     padding: var(--wp--preset--spacing--outer);
     padding-top: calc( var(--wp--preset--spacing--outer) + 80px );
+    box-sizing: border-box;
     background-color: var(--wp--preset--color--contrast);
     color: var(--wp--preset--color--base);
     display: none;
