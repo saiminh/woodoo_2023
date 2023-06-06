@@ -3,6 +3,7 @@
     color: var(--wp--preset--color--base);
     text-decoration: none;
     font-weight: 300;
+    font-size: var(--wp--preset--font-size--14);
 
     &:hover {
       color: var(--wp--preset--color--orange);
@@ -14,5 +15,38 @@
   @media (max-width: 781px) {
     max-width: 130px;
     margin: 2em auto;
+  }
+}
+footer.wp-block-template-part {
+  & .widgettitle {
+    font-size: var(--wp--preset--font-size--12);
+    margin-top: 0.75em;
+  }
+  & .widget_nav_menu {
+    margin: 0;
+  }
+  & .widget_nav_menu .menu {
+    margin-top: 1rem;
+  }
+  & .widget_nav_menu .menu li {
+    display: block;
+
+    & a {
+      text-transform: uppercase;
+    }
+  }
+  & .widget.widget_text {
+    margin: 0!important;
+  }
+  & .footer-hygiene {
+    
+    & .widget_nav_menu .menu {
+      margin-top: 0;
+    }
+    & .widget_nav_menu .menu li a {
+      display: block;
+      text-transform: none;
+      font-size: var(--wp--preset--font-size--12);
+    }
   }
 }
