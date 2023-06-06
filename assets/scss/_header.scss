@@ -266,4 +266,13 @@ body.page-apply {
       color: var(--wp--preset--color--contrast);
     }
   } 
+  header.wp-block-template-part .menu .menu-item:not(.lang-item) a[href*="/contactez-nous/"] ,
+  header.wp-block-template-part .menu .menu-item:not(.lang-item) a[href*="/contact/"] {
+    background-color: var(--wp--preset--color--yellow)!important;
+    color: var(--wp--preset--color--contrast);
+    border-radius: 2em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  } 
 }
