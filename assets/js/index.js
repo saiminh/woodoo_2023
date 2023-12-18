@@ -22,7 +22,7 @@ function jobApplicationDecodeURL(){
 
 function mobileNav() {
   const mobileNavContainer = document.querySelector('header.wp-block-template-part .widget_nav_menu');
-  mobileNavContainer.addEventListener('click', (e) => {
+  mobileNavContainer?.addEventListener('click', (e) => {
     document.body.classList.contains('has-modal-open') ? document.body.classList.remove('has-modal-open') : document.body.classList.add('has-modal-open');
   })
 }

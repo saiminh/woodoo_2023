@@ -49,45 +49,35 @@
       height: 20px;
     }
     & .lang-item {
-      border: 1px solid var(--wp--preset--color--contrast);
-      border-right-width: 0;
-      border-radius: 2em 0 0 2em;
       overflow: hidden;
-      height: calc(2.75em - 2px);
       display: flex;
       align-items: center;
       box-sizing: border-box;
-      padding: .125em!important;
-      padding-right: 0!important;
+      margin-left: 1rem;
     }
     & .lang-item + .lang-item {
-      padding-right: 0.125em!important;
-      padding-left: 0!important;
-      border-left-width: 0;
-      border-right-width: 1px;
-      border-radius: 0 2em 2em 0;
+      margin-left: 0!important;
     }
     & .lang-item a {
-      width: 2.5em;
-      height: 2.5em;
-      line-height: 2.5em;
-      border-radius: 50%;
+      width: 1.75rem;
+      height: 1.5rem;
+      line-height: 1.5rem;
       overflow: hidden;
       text-indent: calc(100% + 1.75em);
-      background-color: var(--wp--preset--color--base);
-      border-radius: 2em;
       padding: 0;
       position: relative;
-
+      color: var(--wp--preset--color--contrast);
+      
       &:after {
         content: '';
         position: absolute;
         color: currentColor;
         top: 0;
         left: 0;
-        width: 2.5em;
+        width: 100%;
         text-align: center;
         text-indent: 0;
+        font-size: var(--wp--preset--font-size--12);
       }
       &[hreflang="fr-FR"]:after {
         content: 'FR';
@@ -97,9 +87,22 @@
         content: 'EN';
       }
     }
+    & .lang-item + .lang-item:before {
+      content: '';
+      width: 1px;
+      height: var(--wp--preset--font-size--12);
+      position: absolute;
+      left: 0;
+      top: calc(50% - var(--wp--preset--font-size--12) / 2);
+      background-color:#CCC;
+    }
     & .lang-item a.currentLink {
-      background-color: var(--wp--preset--color--contrast);
-      color: var(--wp--preset--color--base);
+      // background-color: var(--wp--preset--color--contrast);
+      // background-color: #DDD;
+      color: var(--wp--preset--color--contrast);
+      color: #CCC;
+      pointer-events: none;
+      // color: var(--wp--preset--color--base);
     }
   }
 }
